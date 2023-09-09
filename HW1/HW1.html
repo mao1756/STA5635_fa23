@@ -15150,20 +15150,36 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <span class="n">madelon_y_url</span> <span class="o">=</span> <span class="s2">&quot;./MADELON/madelon_train.labels&quot;</span>
 <span class="n">madelon_x_test_url</span> <span class="o">=</span> <span class="s2">&quot;./MADELON/madelon_valid.data&quot;</span>
 <span class="n">madelon_y_test_url</span> <span class="o">=</span> <span class="s2">&quot;./MADELON/madelon_valid.labels&quot;</span>
-<span class="n">madelon_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_x_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">madelon_y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_y_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">madelon_x_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_x_test_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">madelon_y_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_y_test_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">madelon_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_x_url</span><span class="p">,</span>
+                         <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">madelon_y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_y_url</span><span class="p">,</span>
+                        <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                        <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">madelon_x_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_x_test_url</span><span class="p">,</span>
+                             <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">madelon_y_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">madelon_y_test_url</span><span class="p">,</span>
+                             <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                             <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># satimage</span>
 <span class="n">satimage_x_url</span> <span class="o">=</span> <span class="s2">&quot;./satimage/X.dat&quot;</span>
 <span class="n">satimage_y_url</span> <span class="o">=</span> <span class="s2">&quot;./satimage/Y.dat&quot;</span>
 <span class="n">satimage_x_test_url</span> <span class="o">=</span> <span class="s2">&quot;./satimage/Xtest.dat&quot;</span>
 <span class="n">satimage_y_test_url</span> <span class="o">=</span> <span class="s2">&quot;./satimage/Ytest.dat&quot;</span>
-<span class="n">satimage_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_x_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">satimage_y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_y_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">satimage_x_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_x_test_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">satimage_y_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_y_test_url</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">satimage_x</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_x_url</span><span class="p">,</span>
+                         <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">satimage_y</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_y_url</span><span class="p">,</span>
+                         <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                         <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">satimage_x_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_x_test_url</span><span class="p">,</span>
+                              <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                              <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">satimage_y_test</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">satimage_y_test_url</span><span class="p">,</span>
+                              <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                              <span class="n">delim_whitespace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15203,14 +15219,17 @@ nodes or splits) for which the minimum was attained. (2 points)</p>
 
 <span class="c1"># Create-train-predict decision trees and calculate misclassification rate</span>
 <span class="k">for</span> <span class="n">depth</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">13</span><span class="p">):</span>
-    <span class="n">clf</span>  <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="n">depth</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">clf</span>  <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="n">depth</span><span class="p">,</span>
+                                       <span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
     <span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">,</span> <span class="n">madelon_y</span><span class="p">)</span>
 
     <span class="n">train_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">)</span>
     <span class="n">test_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">madelon_x_test</span><span class="p">)</span>
 
-    <span class="n">train_error</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">madelon_y</span><span class="p">,</span> <span class="n">train_pred</span><span class="p">))</span>
-    <span class="n">test_error</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">madelon_y_test</span><span class="p">,</span> <span class="n">test_pred</span><span class="p">))</span>
+    <span class="n">train_error</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">madelon_y</span><span class="p">,</span>
+                                                <span class="n">train_pred</span><span class="p">))</span>
+    <span class="n">test_error</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">metrics</span><span class="o">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">madelon_y_test</span><span class="p">,</span>
+                                               <span class="n">test_pred</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15593,7 +15612,9 @@ separate curves. Report the training and test misclassification errors in a tabl
 
 <span class="c1"># Create-train-predict random forest and calculate misclassification rate</span>
 <span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">forest_sizes</span><span class="p">:</span>
-    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span>
+                                           <span class="n">max_features</span><span class="o">=</span><span class="s1">&#39;sqrt&#39;</span><span class="p">,</span>
+                                           <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">,</span> <span class="n">madelon_y</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 
     <span class="n">train_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">)</span>
@@ -15814,7 +15835,9 @@ chosen from a random subset of ∼ ln(500) features. (1 point)</p>
 
 <span class="c1"># Create-train-predict random forest and calculate misclassification rate</span>
 <span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">forest_sizes</span><span class="p">:</span>
-    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="mi">500</span><span class="p">)),</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span>
+                                           <span class="n">max_features</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="mi">500</span><span class="p">)),</span>
+                                           <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">,</span> <span class="n">madelon_y</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 
     <span class="n">train_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">)</span>
@@ -16035,7 +16058,9 @@ chosen from all 500 features. (1 point)</p>
 
 <span class="c1"># Create-train-predict random forest and calculate misclassification rate</span>
 <span class="k">for</span> <span class="n">size</span> <span class="ow">in</span> <span class="n">forest_sizes</span><span class="p">:</span>
-    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">clf</span>  <span class="o">=</span> <span class="n">ensemble</span><span class="o">.</span><span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span> <span class="o">=</span> <span class="n">size</span><span class="p">,</span>
+                                           <span class="n">max_features</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+                                           <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">clf</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">,</span> <span class="n">madelon_y</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span>
 
     <span class="n">train_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">madelon_x</span><span class="p">)</span>
