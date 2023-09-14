@@ -3,4 +3,7 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 
 ## Topics of each HW
 
-HW1: Decision Trees and Random Forest
+|HW#|Topic|
+|----|----|
+|1|Decision Trees and Random Forest|
+|2|Regression (OLS, Decision Trees, Random Forest)|
