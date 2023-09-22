@@ -7,3 +7,4 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |----|----|
 |1|Decision Trees and Random Forest|
 |2|Regression (OLS, Decision Trees, Random Forest)|
+|3|Logistic Regression with Gradient Descent|
