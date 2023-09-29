@@ -8,3 +8,4 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |1|Decision Trees and Random Forest|9/9|
 |2|Regression (OLS, Decision Trees, Random Forest)|9/9|
 |3|Logistic Regression with Gradient Descent|TBD/9|
+|4|TISP|TBD/9|
