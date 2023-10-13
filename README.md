@@ -10,3 +10,4 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |3|Logistic Regression with Gradient Descent|9/9|
 |4|TISP|9/9|
 |5|FSA|TBD/9|
+|6|LogitBoost|TBD/9|
