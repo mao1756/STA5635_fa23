@@ -12,4 +12,4 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |5|FSA|9/9|
 |6|LogitBoost|9/9|
 |7|Neural Network|TBD/9|
-|8|Hidden Markov Model|TBD/9|
+|8|Hidden Markov Model(Viterbi, Forward-Backward, Baum-Welch)|TBD/9|
