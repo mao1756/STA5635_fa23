@@ -11,5 +11,7 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |4|TISP|9/9|
 |5|FSA|9/9|
 |6|LogitBoost|9/9|
-|7|Neural Network|TBD/9|
+|7|Neural Network|9/9(*1)|
 |8|Hidden Markov Model(Viterbi, Forward-Backward, Baum-Welch)|TBD/9|
+
+(*1): I made a minor error calculating the loss. I should have taken the average of the losses across all the batches, but in my code, I only recorded the loss of the last batch.
