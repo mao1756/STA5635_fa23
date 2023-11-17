@@ -13,7 +13,8 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |6|LogitBoost|9/9|
 |7|Neural Network|9/9(*1)|
 |8|Hidden Markov Model(Viterbi, Forward-Backward, Baum-Welch)|9/9|
-|9|Spectral Clustering|TBD/9|
+|9|Spectral Clustering|9/9|
 |10|Clustering (PCA, K-means)|TBD/9|
+|11|Principal Component Analysis|TBD/9|
 
 (*1): I made a minor error calculating the loss. I should have taken the average of the losses across all the batches, but in my code, I only recorded the loss of the last batch.
