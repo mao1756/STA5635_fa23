@@ -16,6 +16,7 @@ This is a personal repo to work on the assignments for STA5635 Applied Machine L
 |9|Spectral Clustering|9/9|
 |10|Clustering (PCA, K-means)|9/9(*2)|
 |11|Principal Component Analysis|TBD/9|
+|12|Reinforcement Learning|TBD/9|
 
 (*1): I made a minor error calculating the loss. I should have taken the average of the losses across all the batches, but in my code, I only recorded the loss of the last batch.
 (*2): The grader mentioned that I need to plot contingency matrices before the relabeling. (I don't agree since the wording in the HW statement does not mention this)
